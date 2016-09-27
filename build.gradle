@@ -13,5 +13,8 @@ task demo << {
 }
 run {
 	systemProperties System.getProperties()
-	args System.getProperty("args").split()
+	try{
+		args System.getProperty("args").split()
+	}
+	catch(Exception e){}
 }
