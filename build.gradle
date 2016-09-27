@@ -10,11 +10,12 @@ dependencies {
 
 task demo << {
   println "Integer Sequence Demo"
+  def obj = new src.main.java.GradleExercise();
   for(int i = 1; i <= 5; i++){
-	System.out.println("Tri(" + i + ") = " + GradleExercise.triangle(i));
+	System.out.println("Tri(" + i + ") = " + obj.triangle(i));
   }
   for(int i = 1; i <= 5; i++){
-	System.out.println("Lazy(" + i + ") = " + GradleExercise.lazy(i));
+	System.out.println("Lazy(" + i + ") = " + obj.lazy(i));
   }
 }
 run {
