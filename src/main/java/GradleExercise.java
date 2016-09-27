@@ -19,8 +19,8 @@ public class GradleExercise {
 	
 	public static int triangle(int n){
 		int sum = 0;
-		for(n; n > 0; n--){
-			sum += n;
+		for(int i = n; i > 0; i--){
+			sum += i;
 		}
 		return sum;
 	}
