@@ -10,6 +10,12 @@ dependencies {
 
 task demo << {
   println "Integer Sequence Demo"
+  for(int i = 1; i <= 5; i++){
+	System.out.println("Tri(" + i + ") = " + triangle(i));
+  }
+  for(int i = 1; i <= 5; i++){
+	System.out.println("Lazy(" + i + ") = " + lazy(i));
+  }
 }
 run {
 	systemProperties System.getProperties()
