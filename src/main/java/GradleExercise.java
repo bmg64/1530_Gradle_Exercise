@@ -6,10 +6,10 @@ public class GradleExercise {
 			System.exit(2);		
 		}
 		if(args[1].equals("triangle"){
-			System.out.println(triangle(args[2]);
+			System.out.println(triangle(args[2]));
 		}
 		else if(args[1].equals("lazy"){
-			System.out.println(lazy(args[2]);			
+			System.out.println(lazy(args[2]));			
 		}
 		else{
 			System.out.println("First argument must be \"lazy\" or\"triangle\".");
